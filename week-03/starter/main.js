@@ -3,9 +3,10 @@
 //console.log(document.title)
 
 
-
 /*** Finding HTML Elements ***/
 //Select the element with the id = main. Store the returned value in a variable.
+const $main = document.getElementById('main')
+console.log($main)
 
 
 
