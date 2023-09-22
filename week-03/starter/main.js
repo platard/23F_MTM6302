@@ -1,6 +1,6 @@
 /*** DOM ***/
 // Use the console to print the document title and the URL
-console.log(document.title)
+//console.log(document.title)
 
 
 
