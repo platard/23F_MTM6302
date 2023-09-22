@@ -11,12 +11,13 @@ console.log($main)
 
 
 //Select an element by CSS selector. Target the first link inside the 'nav' element.
-
+const $navFirstOption = document.querySelector('nav a')
+console.log($navFirstOption)
 
 
 //Target all links in the nav element
-
-
+const $navOptions = document.querySelectorAll('nav a')
+console.log($navOptions)
 
 
 //Pattern CSS selectors
