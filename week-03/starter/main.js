@@ -22,6 +22,7 @@ console.log($navOptions)
 
 //Pattern CSS selectors
 //select all elements in the document whose href attribute value starts with "https"
+console.log(document.querySelectorAll('[href^=https]'))
 
 //select all elements in the document whose href attribute value contains the string "cdn"
 
