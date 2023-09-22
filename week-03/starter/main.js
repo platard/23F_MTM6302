@@ -25,7 +25,7 @@ console.log($navOptions)
 console.log(document.querySelectorAll('[href^=https]'))
 
 //select all elements in the document whose href attribute value contains the string "cdn"
-
+console.log(document.querySelectorAll('[href*=cdn]'))
 
 /*** Traversing the DOM  ***/
 //Return a HTMLCollection with the child elements of the main node
