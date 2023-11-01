@@ -68,35 +68,30 @@ const students = [
 const $studentList = document.getElementById('studentList')
 
 //Display all the IDs using the innerHTML only once. Use an array and the join() method.
-//1.create an empty array
-const htmlTemplates = []
-for(const student of students ){
-    // 2.use the push method
-    htmlTemplates.push(
-    `<div id="studentID" class="col-md-6">
-        <div class="ac-card">
-            <div class="ac-card-image d-flex justify-content-center align-items-center"><i class="bi bi-person-bounding-box display-1"></i></div>
-            <div class="ac-card-info">
-                <p>
-                <strong id="studentName">${student.name}</strong><br>
-                <span id="studentNumber">${student.studentNumber}</span>-
-                <span id="userName">${student.userName}</span>
-                </p>
-                <p id="email">${student.email}</p>
-                <!-- here the button -->
 
-                
-            </div>
-            <div class="ac-card-footer">
-                <img class="ac-logo" src="https://imdac.github.io/images/codepen/AC_WORDMARK_1C_WHT.png">
-            </div>
-        </div>
-    </div>`)
-}
-//3.use the join and innerHTML method
-// $studentList.innerHTML = htmlTemplates.join('')
-$studentList.innerHTML = htmlTemplates[0]
+$studentList.innerHTML = `<div id="studentID" class="col-md-6">
+<div class="ac-card">
+    <div class="ac-card-image d-flex justify-content-center align-items-center"><i class="bi bi-person-bounding-box display-1"></i></div>
+    <div class="ac-card-info">
+        <p>
+        <strong id="studentName">${students[0].name}</strong><br>
+        <span id="studentNumber">${students[0].studentNumber}</span>-
+        <span id="userName">${students[0].userName}</span>
+        </p>
+        <p id="email">${students[0].email}</p>
+        <!-- here the button -->
 
+        <button type="button" class="btn btn-primary" data-bs-target="#exampleModal">
+            Launch demo modal
+        </button>
+        
+    </div>
+    <div class="ac-card-footer">
+        <img class="ac-logo" src="https://imdac.github.io/images/codepen/AC_WORDMARK_1C_WHT.png">
+    </div>
+</div>
+</div>
+`
 
 
 
