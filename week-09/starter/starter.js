@@ -81,8 +81,8 @@ $studentList.innerHTML = `<div id="studentID" class="col-md-6">
         <p id="email">${students[0].email}</p>
         <!-- here the button -->
 
-        <button type="button" class="btn btn-primary" data-bs-target="#exampleModal">
-            Launch demo modal
+        <button type="button" class="btn btn-primary">
+            Edit
         </button>
         
     </div>
