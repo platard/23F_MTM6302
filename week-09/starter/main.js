@@ -1,13 +1,7 @@
 /*** Update form ***/
 // 1.Create a button in the student card(starter file), and retrieve it(main js file). Use the bs modal.
-    const $editBtn = document.querySelector('button')
 
 // 2.Add an event listener to the button (optional).
-$editBtn.addEventListener('mouseover', function(){
-    console.log("Button clicked")
-    $editBtn.setAttribute('data-bs-toggle', 'modal')
-    $editBtn.setAttribute('data-bs-target', '#exampleModal')
-})
 
 // 3.Insert a 'HTML form' in the bs modal.
 
