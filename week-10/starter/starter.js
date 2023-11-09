@@ -80,12 +80,12 @@ for(const student of students ){
             <div class="ac-card-image d-flex justify-content-center align-items-center"><i class="bi bi-person-bounding-box display-1"></i></div>
             <div class="ac-card-info">
                 <p>
-                <strong id="studentName-${studentIndex}">${student.name}</strong><br>
-                <span id="studentNumber-${studentIndex}">${student.studentNumber}</span>-
-                <span id="studentUserName-${studentIndex}" >${student.userName}</span>
+                <strong id="studentName">${student.name}</strong><br>
+                <span id="studentNumber">${student.studentNumber}</span>-
+                <span id="studentUserName" >${student.userName}</span>
                 </p>
-                <p id="studentEmail-${studentIndex}">${student.email}</p>
-                <button data-index="${studentIndex}" class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
+                <p id="studentEmail">${student.email}</p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>
             </div>
             <div class="ac-card-footer">
                 <img class="ac-logo" src="https://imdac.github.io/images/codepen/AC_WORDMARK_1C_WHT.png">
