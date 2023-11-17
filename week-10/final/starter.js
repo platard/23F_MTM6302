@@ -1,5 +1,5 @@
 // Student data
-const students = [
+let students = [
     {
         "studentNumber":1,
         "name":"Leanne Graham",

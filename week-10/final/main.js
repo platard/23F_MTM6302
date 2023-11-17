@@ -45,9 +45,18 @@ $modalBody.addEventListener('submit', function(e){
     students[e.target.dataset.index].userName = $studentForm.elements['userName'].value
 
     createIDs()
+    localStorage.setItem('students', JSON.stringify(students) )
 })
 
+console.log( JSON.parse(localStorage.getItem('students')) )
 
+
+if(localStorage.getItem('students')){
+
+    students = JSON.parse(localStorage.getItem('students'))
+    
+    createIDs()
+}
 
 
 
