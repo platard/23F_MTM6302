@@ -1,27 +1,31 @@
 /*** DOM ***/
 // Use the console to print the document title and the URL
-
+//console.log(document.title)
 
 
 /*** Finding HTML Elements ***/
 //Select the element with the id = main. Store the returned value in a variable.
+const $main = document.getElementById('main')
+console.log($main)
 
 
 
 //Select an element by CSS selector. Target the first link inside the 'nav' element.
-
+const $navFirstOption = document.querySelector('nav a')
+console.log($navFirstOption)
 
 
 //Target all links in the nav element
-
-
+const $navOptions = document.querySelectorAll('nav a')
+console.log($navOptions)
 
 
 //Pattern CSS selectors
 //select all elements in the document whose href attribute value starts with "https"
+console.log(document.querySelectorAll('[href^=https]'))
 
 //select all elements in the document whose href attribute value contains the string "cdn"
-
+console.log(document.querySelectorAll('[href*=cdn]'))
 
 /*** Traversing the DOM  ***/
 //Return a HTMLCollection with the child elements of the main node
